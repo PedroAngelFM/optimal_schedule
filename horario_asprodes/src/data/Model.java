@@ -4,18 +4,32 @@
  */
 package data;
 
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.nio.file.Path;
 import java.util.List;
-
+import com.coti.tools.Rutas;
+import java.util.ArrayList;
 /**
  *
  * @author pedro
  */
 public class Model {
-    List<Trabajador> plantilla;
-    List<Turno> listaTurnos;
+    List<Trabajador> plantilla=new ArrayList<>();
+    List<Turno> listaTurnos=new ArrayList<>() ;
 
     public Model() {
     }
+            try {
+            Path p = Rutas.pathToFileInFolderOnDesktop("IMDB21", "actores.bin");
+            FileInputStream fis = new FileInputStream(p.toFile());
+            BufferedInputStream bis = new BufferedInputStream(fis);
+            ObjectInputStream ois = new ObjectInputStream(bis);
+            actores = (List<Actor>) ois.readObject();
+            ois.close();
+           } catch (Exception ex) {
+            }
     
     
 }

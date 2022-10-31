@@ -16,7 +16,7 @@ public class View {
     public void inicioPrograma()
     {
         System.out.printf("\nBienvenido al programa de creación de horarios \n");
-        try
+       
     }
     
     public void runMenu() {
