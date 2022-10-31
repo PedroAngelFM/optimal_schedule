@@ -11,22 +11,33 @@ package data;
 public class Trabajador {
     String identification;
     float horasTrabajadasAnio;
+    float horasTrabajadasMes;
+    float tipoContrato;
+    int findesTrabajados; 
+    boolean isUltimoTurnoNoche;
 
-    public String getIdentification() {
-        return identification;
+    public Trabajador()
+    {
+        this.identification=" ";
+        this.horasTrabajadasAnio=0;
+        this.horasTrabajadasMes=0;
+        this.tipoContrato=(float) 1.0;
+        
+        
     }
+    
+    
 
-    public void setIdentification(String identification) {
+    public Trabajador(String identification, float horasTrabajadasAnio, float horasTrabajadasMes, int findesTrabajados, boolean isUltimoTurnoNoche) {
         this.identification = identification;
-    }
-
-    public float getHorasTrabajadasAnio() {
-        return horasTrabajadasAnio;
-    }
-
-    public void setHorasTrabajadasAnio(float horasTrabajadasAnio) {
         this.horasTrabajadasAnio = horasTrabajadasAnio;
+        this.horasTrabajadasMes = horasTrabajadasMes;
+        this.findesTrabajados = findesTrabajados;
+        this.isUltimoTurnoNoche = isUltimoTurnoNoche;
     }
+    
+    
+
     
     
 }
