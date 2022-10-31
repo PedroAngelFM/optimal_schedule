@@ -13,5 +13,8 @@ public class View {
     public void runMenu() {
         System.out.printf("No está implementado aún");
     }
-    
+    public void inicioPrograma()
+    {
+        System.out.printf("No está implementado aún");
+    }
 }

@@ -4,11 +4,13 @@
  */
 package data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author pedro
  */
-public class Trabajador {
+public class Trabajador implements Serializable {
     String identification;
     float horasTrabajadasAnio;
     float horasTrabajadasMes;
