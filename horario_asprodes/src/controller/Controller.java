@@ -4,10 +4,17 @@
  */
 package controller;
 
+import data.Model;
+
 /**
  *
  * @author pedro
  */
 public class Controller {
+    
+    Model m=new Model ();
+
+    public Controller() {
+    }
     
 }

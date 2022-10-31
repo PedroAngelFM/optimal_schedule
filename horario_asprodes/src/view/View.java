@@ -4,17 +4,23 @@
  */
 package view;
 
+import controller.Controller;
+
 /**
  *
  * @author pedro
  */
 public class View {
-
+    Controller c=new Controller();
+    
+    public void inicioPrograma()
+    {
+        System.out.printf("\nBienvenido al programa de creación de horarios \n");
+        try
+    }
+    
     public void runMenu() {
         System.out.printf("No está implementado aún");
     }
-    public void inicioPrograma()
-    {
-        System.out.printf("No está implementado aún");
-    }
+
 }

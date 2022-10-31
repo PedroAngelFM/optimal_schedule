@@ -4,10 +4,18 @@
  */
 package data;
 
+import java.util.List;
+
 /**
  *
  * @author pedro
  */
 public class Model {
+    List<Trabajador> plantilla;
+    List<Turno> listaTurnos;
+
+    public Model() {
+    }
+    
     
 }
