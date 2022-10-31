@@ -16,6 +16,7 @@ public class Trabajador {
     int findesTrabajados; 
     boolean isUltimoTurnoNoche;
 
+    //Constructor de trabajador vacío, no se ha realizado ninguna jornada
     public Trabajador()
     {
         this.identification=" ";
