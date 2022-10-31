@@ -17,4 +17,8 @@ public class Controller {
     public Controller() {
     }
     
+    public void inicioPrograma()
+    {
+        m.loadPlantilla();
+    }
 }

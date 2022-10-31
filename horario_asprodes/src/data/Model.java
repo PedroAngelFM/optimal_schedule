@@ -21,15 +21,22 @@ public class Model {
 
     public Model() {
     }
-            try {
+    
+    public boolean loadPlantilla()
+    {
+                try {
             Path p = Rutas.pathToFileInFolderOnDesktop("IMDB21", "actores.bin");
             FileInputStream fis = new FileInputStream(p.toFile());
             BufferedInputStream bis = new BufferedInputStream(fis);
             ObjectInputStream ois = new ObjectInputStream(bis);
-            actores = (List<Actor>) ois.readObject();
+            plantilla= (List<Trabajador>) ois.readObject();
             ois.close();
+            return true;
            } catch (Exception ex) {
+                 return false;   
             }
+    
+    }
     
     
 }
