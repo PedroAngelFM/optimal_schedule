@@ -17,10 +17,15 @@ public class View {
     {
         System.out.printf("\nBienvenido al programa de creación de horarios \n");
         c.inicioPrograma();
+        
     }
     
     public void runMenu() {
         System.out.printf("No está implementado aún");
+    }
+
+    public void salidaPrograma() {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
 }

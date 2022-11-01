@@ -17,6 +17,7 @@ public class Horario_asprodes {
         View view=new View();
         view.inicioPrograma();
         view.runMenu();
+        view.salidaPrograma();
     }
     
 }
