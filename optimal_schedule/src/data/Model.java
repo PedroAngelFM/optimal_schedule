@@ -59,6 +59,11 @@ public class Model {
      
     }
     
+    public void createTrabajadorFromCSV(String[] trabajador)
+    {
+        System.out.printf("Método aun no implementado");
+    }
+    
     public boolean isPlantillaVacia()
     {
         return plantilla.isEmpty();
